@@ -117,32 +117,12 @@ suitable job opportunity.</p>
             <li>Arabic: Mother Tongue</li>
             <li>English: Good</li>
         </ul>
-        <button onclick="translatePage()" class="translate-btn">
-  عرض الترجمة
-</button>
+        <button onclick="translatePage()">عرض الترجمة</button>
 
 <script>
 function translatePage() {
-  var currentUrl = encodeURIComponent(window.location.href);
-  var translateUrl = "https://translate.google.com/translate?sl=en&tl=ar&u=" + currentUrl;
-  window.open(translateUrl, "_blank");
+  window.location.href = "https://translate.google.com/translate?sl=en&tl=ar&u=" + window.location.href;
 }
 </script>
-
-<style>
-.translate-btn {
-  padding: 8px 15px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.translate-btn:hover {
-  background-color: #0056b3;
-}
-</style>
     </body>
 </html>
