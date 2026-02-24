@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
         <title>Hossam Mohamed Ahmed</title>
     </head>
     <body>
@@ -80,8 +79,8 @@ suitable job opportunity.</p>
         <ul>
             <li><strong>ESRI Package</strong></li>
             <ol>
-                <li>Arc GIS Pro</li>
-                <li> Arc GIS desktop (Arc map -Arc scene - Arc globe - Arc catalog)</li>
+                <li> <strong>Arc GIS Pro</strong></li>
+                <li> <strong>Arc GIS desktop (Arc map -Arc scene - Arc globe - Arc catalog)</strong></li>
                 <li> <strong>Arc Online</strong> (Dashboard - Survey123 - Story map - Web application -Map viewer Web app builder - Experiences Builder - Business Analysis-)</li>
                 <li> Arc GIS earth</li>
             </ol>
@@ -118,5 +117,32 @@ suitable job opportunity.</p>
             <li>Arabic: Mother Tongue</li>
             <li>English: Good</li>
         </ul>
+        <button onclick="translatePage()" class="translate-btn">
+  عرض الترجمة
+</button>
+
+<script>
+function translatePage() {
+  var currentUrl = encodeURIComponent(window.location.href);
+  var translateUrl = "https://translate.google.com/translate?sl=en&tl=ar&u=" + currentUrl;
+  window.open(translateUrl, "_blank");
+}
+</script>
+
+<style>
+.translate-btn {
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.translate-btn:hover {
+  background-color: #0056b3;
+}
+</style>
     </body>
 </html>
